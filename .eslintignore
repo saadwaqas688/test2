@@ -1,0 +1,6 @@
+# Ignore all files in the build directory
+build/
+
+# Ignore a specific file
+src/App.test.js
+src/index.js

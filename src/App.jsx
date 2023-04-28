@@ -41,7 +41,7 @@ function UserList() {
       <h1>User List</h1>
       <ul>
         {data.map((user) => (
-          <li>{user.name}</li>
+          <li key={user.id}>{user.name}</li>
         ))}
       </ul>
     </div>

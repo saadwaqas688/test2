@@ -35,7 +35,7 @@ function UserList() {
   //   return <div>Error: {error}</div>;
   // }
 
-  console.log('asdf');
+  console.log('asdfd');
 
   return (
     <div>

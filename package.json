@@ -20,7 +20,8 @@
     "lint-fix": "eslint --fix src/**/*",
     "lint-debug": "eslint --debug src/index.css",
     "lint-verbose": "eslint --debug src/index.css",
-    "pre-commit": "npm run lint"
+    "pre-commit": "eslint src",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -47,14 +48,11 @@
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "husky": "^8.0.3"
+    "husky": "^8.0.0"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run pre-commit"
     }
   }
-  
 }
-
-

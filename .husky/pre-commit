@@ -3,3 +3,8 @@
 
 #!/bin/sh
 npm run lint
+# If there were errors, prevent the commit
+if [ $? -ne 0 ]; then
+  echo "Linting failed. Aborting commit."
+  exit 1
+fi
